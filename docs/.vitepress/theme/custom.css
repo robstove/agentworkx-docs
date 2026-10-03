@@ -56,6 +56,33 @@
   --vp-local-search-bg: var(--awx-background);
 }
 
+/*
+ * The home page only: the signup field illustration, with the content on a signup-style card.
+ * The image is the Entra tenant branding asset on Microsoft's CDN, the same URL the signup app
+ * uses. A tenant branding change or a CDN outage there changes or blanks this background.
+ */
+.awx-home {
+  background: var(--awx-shell-background)
+    url("https://aadcdn.msauthimages.net/dbd5a2dd-diah-fgqfu8qddb0ospfwugf5thawxhb9wwobq7xajo/logintenantbranding/0/illustration?ts=639250757507791900")
+    center / cover no-repeat;
+  --vp-home-hero-name-color: var(--awx-foreground);
+}
+
+.awx-home .VPNavBar,
+.awx-home .VPNavBar .content-body,
+.awx-home .VPContent,
+.awx-home .VPFooter {
+  background: transparent;
+}
+
+.awx-home .VPHome .vp-doc {
+  background: var(--awx-background);
+  border: 1px solid var(--awx-border);
+  border-radius: 0.875rem;
+  padding: 24px;
+  box-shadow: 0 1px 2px oklch(0% 0 0 / 0.3), 0 2px 8px oklch(0% 0 0 / 0.24);
+}
+
 ::selection {
   background-color: color-mix(in oklab, var(--awx-primary) 34%, transparent);
   color: var(--awx-foreground);
