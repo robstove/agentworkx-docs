@@ -5,65 +5,35 @@ pageClass: awx-home
 
 hero:
   name: AgentWorkX
-  text: Describe it. Agents do the work.
-  tagline: Every thread is saved. You approve what matters. Agents keep working while you're away.
+  text: Documentation
   image:
     src: /logo.svg
     alt: AgentWorkX
   actions:
     - theme: brand
-      text: Get started in 5 minutes
+      text: Get started
       link: /getting-started
-    - theme: alt
-      text: Browse features
-      link: "#all-features"
-
-features:
-  - title: Chat
-    details: Threads that keep their history, with attachments, voice, slash commands, rewrite tools, and rich answers.
-    link: /chat
-    linkText: Chat guide
-  - title: Agents and teams
-    details: Launch built-in agents, build your own by chatting with a maker agent, and run teams with projects.
-    link: /agents-and-teams
-    linkText: Agents and teams
-  - title: Models and providers
-    details: Connect OpenAI, Anthropic, Vertex AI, or a compatible service, and tune model profiles for each job.
-    link: /models
-    linkText: Models guide
-  - title: Tools and connectors
-    details: Give agents tools from MCP servers and Microsoft 365, and approve the calls that matter.
-    link: /tools
-    linkText: Tools guide
-  - title: Automation
-    details: Run agents on a schedule, and check their actions with hooks that can block a step.
-    link: /automation
-    linkText: Automation guide
-  - title: Workspaces and terminal
-    details: Folders of files for you and your agents, a terminal in the browser, and shell variables.
-    link: /workspaces
-    linkText: Workspaces guide
-  - title: Ideas and prompts
-    details: Capture a thought in one step, and keep a library of prompts to reuse and compare.
-    link: /capture
-    linkText: Ideas and prompts
-  - title: Personalization
-    details: Themes, backgrounds, a theme studio, and chat preferences that fit how you work.
-    link: /personalization
-    linkText: Personalization guide
 ---
 
-## Choose your path
+## Get started
 
-### I want to get work done
+You need an AgentWorkX account, and an API key for OpenAI, Anthropic, or Google Vertex AI. A model that runs on your own computer in LM Studio or Ollama also works.
 
-- [Start your first chat](/getting-started#start-a-chat)
+1. [Connect a model provider](/getting-started#connect-a-model-provider) from the card on **Home**.
+2. [Start a chat](/getting-started#start-a-chat) in the Home composer.
+3. [Pick up where you left off](/getting-started#pick-up-where-you-left-off) from the thread rail in **Chat**.
+
+## Your next step
+
+### Get work done
+
 - [Rewrite and translate](/chat#rewrite-and-translate)
-- [Ideas and prompts](/capture#prompts)
+- [Attach files](/chat#the-composer)
+- [Prompts](/capture#prompts)
+- [Ideas](/capture#ideas)
 - [Workspaces](/workspaces#workspaces)
-- [The board](/chat#the-board)
 
-### I build and run agents
+### Build and run agents
 
 - [Create an agent](/agents-and-teams#create-something-new)
 - [Model profiles](/models#model-profiles)
@@ -72,14 +42,6 @@ features:
 - [Hooks](/automation#hooks)
 
 ## All features
-
-### Start here
-
-- [Before you start](/getting-started#before-you-start)
-- [Connect a model provider](/getting-started#connect-a-model-provider)
-- [Start a chat](/getting-started#start-a-chat)
-- [Pick up where you left off](/getting-started#pick-up-where-you-left-off)
-- [Find your way around](/getting-started#find-your-way-around)
 
 ### Chat
 
@@ -139,13 +101,6 @@ features:
 - [Chat preferences](/personalization#chat-preferences)
 - [Reset](/personalization#reset)
 
-## How these docs change
+---
 
-Users and the AgentWorkX agent write these pages together. Each change arrives as a pull request, and a maintainer reviews it before it goes live. [Contribute on GitHub](https://github.com/robstove/agentworkx-docs).
-
-```mermaid
-flowchart LR
-  A[User or agent] -->|propose change| B[Pull request]
-  B -->|maintainer merges| C[main branch]
-  C -->|GitHub Actions| D[This site]
-```
+These pages take pull requests. [Edit them on GitHub](https://github.com/robstove/agentworkx-docs).
