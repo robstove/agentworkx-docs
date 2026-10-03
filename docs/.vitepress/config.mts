@@ -25,7 +25,23 @@ export default withMermaid({
   // The AgentWorkX agent writes pages, and '{onclick=...}' attribute syntax would run script here.
   markdown: { attrs: { disable: true } },
   lastUpdated: true,
+  // The signup surface carries one dark theme, so the docs do too.
+  appearance: "force-dark",
+  head: [
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/agentworkx-docs/logo.svg" }],
+    ["meta", { name: "theme-color", content: "oklch(5% 0.005 280)" }],
+    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      },
+    ],
+  ],
   themeConfig: {
+    logo: "/logo.svg",
     search: { provider: "local" },
     sidebar: [{ text: "Guides", items: sidebarItems() }],
     editLink: {
