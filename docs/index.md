@@ -19,11 +19,9 @@ hero:
 
 ## Get started
 
-You need an AgentWorkX account, and an API key for OpenAI, Anthropic, or Google Vertex AI. A model that runs in LM Studio or Ollama also works.
-
-1. [Connect a model provider](/getting-started#connect-a-model-provider) from the card on **Home**.
+1. [Connect a model provider](/getting-started#connect-a-model-provider). Paste an API key, or point to a local model.
 2. [Start a chat](/getting-started#start-a-chat) in the Home composer.
-3. [Find your thread again](/getting-started#find-your-thread-again) in the thread rail in **Chat**.
+3. [Let the agent use a tool](/getting-started#let-the-agent-use-a-tool), and approve the call.
 
 If a step fails, see [When something goes wrong](/getting-started#when-something-goes-wrong).
 

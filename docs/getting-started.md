@@ -7,12 +7,18 @@ pageClass: awx-steps
 
 # Getting started
 
-This page takes you from sign-in to your first agent answer. It takes about five minutes.
+This page takes you from sign-in to an agent that uses a tool for you. It takes about five minutes.
 
 ## Before you start
 
-- An AgentWorkX account. Sign in with it when you open AgentWorkX.
-- An API key for **OpenAI**, **Anthropic**, or **Google Vertex AI**, or a model that runs on your own computer in **LM Studio** or **Ollama**.
+- An AgentWorkX account
+- A model to connect: an API key from a provider, or a local model
+
+| Provider | What you need |
+|---|---|
+| OpenAI, Anthropic | An API key |
+| Google Vertex AI | A service account key, a project, and a region |
+| LM Studio, Ollama | The address of the running model server |
 
 ## Quick start
 
@@ -32,11 +38,15 @@ Type a question in the composer on **Home** and press Enter. AgentWorkX opens **
 
 To pick a different agent first, press <kbd>Ctrl</kbd>+<kbd>K</kbd> (<kbd>Cmd</kbd>+<kbd>K</kbd> on a Mac) to open the **Launch Bay**.
 
-### Find your thread again
+### Let the agent use a tool
 
-Close the tab and open AgentWorkX again. Your conversation is in the thread rail on the left of **Chat**. Select it and keep going. The agent continues from the thread's history.
+1. Open the tool picker under the composer, and turn on a tool category.
+2. Ask for something that needs one of those tools.
+3. If the call needs your approval, a card appears in the chat. Choose **Approve**.
 
-![The thread rail in Chat with a saved thread](/screenshots/chat-thread-rail.svg)
+The agent runs the tool and uses the result in its answer.
+
+![An approval card in the chat](/screenshots/tool-approval-card.svg)
 
 ## When something goes wrong
 
