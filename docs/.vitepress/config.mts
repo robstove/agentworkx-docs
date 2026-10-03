@@ -22,6 +22,8 @@ export default withMermaid({
   description: "Product documentation for AgentWorkX.",
   base: "/agentworkx-docs/",
   cleanUrls: true,
+  // The AgentWorkX agent writes pages, and '{onclick=...}' attribute syntax would run script here.
+  markdown: { attrs: { disable: true } },
   lastUpdated: true,
   themeConfig: {
     search: { provider: "local" },
