@@ -104,6 +104,17 @@
   }
 }
 
+.awx-home .VPFeature {
+  background: var(--awx-background);
+  border: 1px solid var(--awx-border);
+  transition: border-color 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.awx-home .VPFeature:hover,
+.awx-home .VPFeature:focus-visible {
+  border-color: var(--awx-primary);
+}
+
 .awx-home .VPHero .image-src {
   max-width: 140px;
   max-height: 180px;

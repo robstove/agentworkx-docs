@@ -6,7 +6,7 @@ pageClass: awx-steps
 
 # Getting started
 
-In about five minutes you will have an agent answer in a thread that AgentWorkX keeps for you.
+This page takes you from sign-in to your first agent answer. It takes about five minutes.
 
 ## Before you start
 

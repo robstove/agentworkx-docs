@@ -13,6 +13,43 @@ hero:
     - theme: brand
       text: Get started
       link: /getting-started
+    - theme: alt
+      text: All features
+      link: "#all-features"
+
+features:
+  - title: Chat
+    details: The composer, slash commands, attachments, rewrite and translate, message actions, and thread search.
+    link: /chat
+    linkText: Chat guide
+  - title: Agents and teams
+    details: The Launch Bay, the Create new menu, teams and projects, and Take over.
+    link: /agents-and-teams
+    linkText: Agents and teams guide
+  - title: Models and providers
+    details: Providers, model profiles, AI Powered feature settings, and the Lab.
+    link: /models
+    linkText: Models guide
+  - title: Tools and connectors
+    details: Thread tools, Agent Connectors, Microsoft 365, tool approvals, and HTML templates.
+    link: /tools
+    linkText: Tools guide
+  - title: Automation
+    details: Schedules and hooks.
+    link: /automation
+    linkText: Automation guide
+  - title: Workspaces and terminal
+    details: Workspaces, the terminal, and Shell Environment variables.
+    link: /workspaces
+    linkText: Workspaces guide
+  - title: Ideas and prompts
+    details: The Ideas and Prompts drawers.
+    link: /capture
+    linkText: Ideas and prompts guide
+  - title: Personalization
+    details: Appearance, Theme Studio, chat preferences, and reset.
+    link: /personalization
+    linkText: Personalization guide
 ---
 
 ## Get started
