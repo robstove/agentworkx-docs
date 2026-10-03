@@ -93,6 +93,65 @@
   }
 }
 
+.awx-home .VPFeature {
+  background: color-mix(in oklch, var(--awx-background) 88%, transparent);
+  border: 1px solid var(--awx-border);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.2s;
+}
+
+.awx-home .VPFeature:hover {
+  border-color: var(--awx-primary);
+}
+
+.awx-home .VPHero .image-src {
+  max-width: 140px;
+  max-height: 180px;
+}
+
+.awx-home .VPHero .image-bg {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in oklch, var(--awx-primary) 45%, transparent),
+    transparent 70%
+  );
+  opacity: 0.6;
+}
+
+/* The full feature index: one column per area, as many columns as fit. */
+.awx-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0 24px;
+}
+
+.awx-index > p {
+  grid-column: 1 / -1;
+  margin: 16px 0 0;
+}
+
+.awx-index > p strong {
+  color: var(--awx-text-soft);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.awx-index > ul {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0 24px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.awx-index > ul > li {
+  margin: 4px 0;
+}
+
 /* Mermaid paints its own grey behind edge labels; use the page surface instead. */
 .vp-doc .mermaid .labelBkg,
 .vp-doc .mermaid .edgeLabel,

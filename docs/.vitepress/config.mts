@@ -5,16 +5,19 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 const docsRoot = join(import.meta.dirname, "..");
 
 // The AgentWorkX agent adds pages through pull requests, so the sidebar reads the folder.
-// Each page title comes from its frontmatter `title`, else its file name.
+// Each page takes its title and position from frontmatter `title` and `order`; a page without
+// `order` goes last.
 function sidebarItems() {
   return readdirSync(docsRoot)
     .filter((file) => file.endsWith(".md") && file !== "index.md")
-    .sort()
     .map((file) => {
       const text = readFileSync(join(docsRoot, file), "utf8");
       const title = /^title:\s*(.+)$/m.exec(text)?.[1]?.trim() ?? file.slice(0, -3);
-      return { text: title, link: `/${file.slice(0, -3)}` };
-    });
+      const order = Number(/^order:\s*(\d+)$/m.exec(text)?.[1] ?? Infinity);
+      return { text: title, link: `/${file.slice(0, -3)}`, order };
+    })
+    .sort((a, b) => a.order - b.order || a.text.localeCompare(b.text))
+    .map(({ text, link }) => ({ text, link }));
 }
 
 export default withMermaid({
