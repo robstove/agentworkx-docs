@@ -75,12 +75,29 @@
   background: transparent;
 }
 
+/* VitePress gives home-page markdown no container, so the card sets its own width. */
 .awx-home .VPHome .vp-doc {
+  box-sizing: border-box;
+  width: min(1152px, 100% - 48px);
+  margin: 0 auto 64px;
   background: var(--awx-background);
   border: 1px solid var(--awx-border);
   border-radius: 0.875rem;
   padding: 24px;
   box-shadow: 0 1px 2px oklch(0% 0 0 / 0.3), 0 2px 8px oklch(0% 0 0 / 0.24);
+}
+
+@media (min-width: 960px) {
+  .awx-home .VPHome .vp-doc {
+    width: min(1152px, 100% - 128px);
+  }
+}
+
+/* Mermaid paints its own grey behind edge labels; use the page surface instead. */
+.vp-doc .mermaid .labelBkg,
+.vp-doc .mermaid .edgeLabel,
+.vp-doc .mermaid .edgeLabel p {
+  background-color: var(--vp-c-bg) !important;
 }
 
 ::selection {
