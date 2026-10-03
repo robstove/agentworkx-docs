@@ -1,6 +1,7 @@
 ---
 title: Workspaces and terminal
 order: 7
+group: Build and run agents
 ---
 
 # Workspaces and terminal

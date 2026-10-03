@@ -1,6 +1,7 @@
 ---
 title: Chat
 order: 2
+group: Use AgentWorkX
 ---
 
 # Chat

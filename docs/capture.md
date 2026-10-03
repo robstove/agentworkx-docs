@@ -1,6 +1,7 @@
 ---
 title: Ideas and prompts
 order: 8
+group: Use AgentWorkX
 ---
 
 # Ideas and prompts

@@ -1,11 +1,13 @@
 ---
-title: AgentWorkX
+title: AgentWorkX Docs
+titleTemplate: false
 layout: home
 pageClass: awx-home
 
 hero:
   name: AgentWorkX
   text: Documentation
+  tagline: AgentWorkX is a workspace where you chat with AI agents, connect them to your tools, and run them on a schedule.
   image:
     src: /logo.svg
     alt: AgentWorkX
@@ -13,131 +15,30 @@ hero:
     - theme: brand
       text: Get started
       link: /getting-started
-    - theme: alt
-      text: All features
-      link: "#all-features"
-
-features:
-  - title: Chat
-    details: The composer, slash commands, attachments, rewrite and translate, message actions, and thread search.
-    link: /chat
-    linkText: Chat guide
-  - title: Agents and teams
-    details: The Launch Bay, the Create new menu, teams and projects, and Take over.
-    link: /agents-and-teams
-    linkText: Agents and teams guide
-  - title: Models and providers
-    details: Providers, model profiles, AI Powered feature settings, and the Lab.
-    link: /models
-    linkText: Models guide
-  - title: Tools and connectors
-    details: Thread tools, Agent Connectors, Microsoft 365, tool approvals, and HTML templates.
-    link: /tools
-    linkText: Tools guide
-  - title: Automation
-    details: Schedules and hooks.
-    link: /automation
-    linkText: Automation guide
-  - title: Workspaces and terminal
-    details: Workspaces, the terminal, and Shell Environment variables.
-    link: /workspaces
-    linkText: Workspaces guide
-  - title: Ideas and prompts
-    details: The Ideas and Prompts drawers.
-    link: /capture
-    linkText: Ideas and prompts guide
-  - title: Personalization
-    details: Appearance, Theme Studio, chat preferences, and reset.
-    link: /personalization
-    linkText: Personalization guide
 ---
 
 ## Get started
 
-You need an AgentWorkX account, and an API key for OpenAI, Anthropic, or Google Vertex AI. A model that runs on your own computer in LM Studio or Ollama also works.
+You need an AgentWorkX account, and an API key for OpenAI, Anthropic, or Google Vertex AI. A model that runs in LM Studio or Ollama also works.
 
 1. [Connect a model provider](/getting-started#connect-a-model-provider) from the card on **Home**.
 2. [Start a chat](/getting-started#start-a-chat) in the Home composer.
-3. [Pick up where you left off](/getting-started#pick-up-where-you-left-off) from the thread rail in **Chat**.
+3. [Find your thread again](/getting-started#find-your-thread-again) in the thread rail in **Chat**.
 
-## Your next step
+If a step fails, see [When something goes wrong](/getting-started#when-something-goes-wrong).
 
-### Get work done
+## Guides
 
-- [Rewrite and translate](/chat#rewrite-and-translate)
-- [Attach files](/chat#the-composer)
-- [Prompts](/capture#prompts)
-- [Ideas](/capture#ideas)
-- [Workspaces](/workspaces#workspaces)
+### Use AgentWorkX
+
+- [**Chat**](/chat) The composer, slash commands, attachments, rewrite and translate, and thread search.
+- [**Ideas and prompts**](/capture) Capture ideas, and save prompts to reuse.
+- [**Personalization**](/personalization) Appearance, Theme Studio, and chat preferences.
 
 ### Build and run agents
 
-- [Create an agent](/agents-and-teams#create-something-new)
-- [Model profiles](/models#model-profiles)
-- [Agent Connectors](/tools#agent-connectors)
-- [Schedules](/automation#schedules)
-- [Hooks](/automation#hooks)
-
-## All features
-
-### Chat
-
-- [The composer](/chat#the-composer)
-- [Slash commands](/chat#slash-commands)
-- [Rewrite and translate](/chat#rewrite-and-translate)
-- [Message actions](/chat#message-actions)
-- [Rich answers](/chat#rich-answers)
-- [Manage threads](/chat#manage-threads)
-- [The inspector](/chat#the-inspector)
-- [The board](/chat#the-board)
-
-### Agents and teams
-
-- [Launch an agent](/agents-and-teams#launch-an-agent)
-- [Create something new](/agents-and-teams#create-something-new)
-- [Teams](/agents-and-teams#teams)
-- [Take over](/agents-and-teams#take-over)
-
-### Models and providers
-
-- [Language Models](/models#language-models)
-- [Model profiles](/models#model-profiles)
-- [AI Powered features](/models#ai-powered-features)
-- [Help on any setting](/models#help-on-any-setting)
-- [Lab](/models#lab)
-
-### Tools and connectors
-
-- [Choose tools for a thread](/tools#choose-tools-for-a-thread)
-- [Agent Connectors](/tools#agent-connectors)
-- [Integrations](/tools#integrations)
-- [Tool approvals](/tools#tool-approvals)
-- [Approvals drawer](/tools#approvals-drawer)
-- [HTML templates](/tools#html-templates)
-
-### Automation
-
-- [Schedules](/automation#schedules)
-- [Hooks](/automation#hooks)
-
-### Workspaces and terminal
-
-- [Workspaces](/workspaces#workspaces)
-- [Terminal](/workspaces#terminal)
-- [Shell Environment](/workspaces#shell-environment)
-
-### Ideas and prompts
-
-- [Ideas](/capture#ideas)
-- [Prompts](/capture#prompts)
-
-### Personalization
-
-- [Appearance](/personalization#appearance)
-- [Theme Studio](/personalization#theme-studio)
-- [Chat preferences](/personalization#chat-preferences)
-- [Reset](/personalization#reset)
-
----
-
-These pages take pull requests. [Edit them on GitHub](https://github.com/robstove/agentworkx-docs).
+- [**Agents and teams**](/agents-and-teams) The Launch Bay, the Create new menu, teams, and Take over.
+- [**Models and providers**](/models) Providers, model profiles, AI Powered features, and the Lab.
+- [**Tools and connectors**](/tools) Thread tools, Agent Connectors, Microsoft 365, and tool approvals.
+- [**Automation**](/automation) Schedules and hooks.
+- [**Workspaces and terminal**](/workspaces) Workspaces, the terminal, and Shell Environment.

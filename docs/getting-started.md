@@ -1,6 +1,7 @@
 ---
 title: Getting started
 order: 1
+group: Start here
 pageClass: awx-steps
 ---
 
@@ -31,11 +32,30 @@ Type a question in the composer on **Home** and press Enter. AgentWorkX opens **
 
 To pick a different agent first, press <kbd>Ctrl</kbd>+<kbd>K</kbd> (<kbd>Cmd</kbd>+<kbd>K</kbd> on a Mac) to open the **Launch Bay**.
 
-### Pick up where you left off
+### Find your thread again
 
 Close the tab and open AgentWorkX again. Your conversation is in the thread rail on the left of **Chat**. Select it and keep going. The agent continues from the thread's history.
 
 ![The thread rail in Chat with a saved thread](/screenshots/chat-thread-rail.svg)
+
+## When something goes wrong
+
+### The provider card does not accept your key
+
+- Check that the key belongs to the provider you picked. An OpenAI key does not work for Anthropic.
+- Check that the key is still active, and that your provider account has billing set up.
+- Copy the key again. A space or a missing character at either end makes it fail.
+
+### AgentWorkX cannot reach your local model
+
+AgentWorkX connects to the model from its server, not from your browser. If AgentWorkX runs on a server and LM Studio or Ollama runs on your computer, `localhost` points at the server.
+
+- Check that LM Studio or Ollama is running and that its server is turned on.
+- Use an address that the AgentWorkX server can reach.
+
+### The agent stops with an error
+
+Open [Settings → Language Models](/models#language-models), open the provider, and run its check again. If the check fails, replace the key.
 
 ## What to do next
 

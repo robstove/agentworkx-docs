@@ -104,20 +104,17 @@
   }
 }
 
-.awx-home .VPFeature {
-  background: var(--awx-background);
-  border: 1px solid var(--awx-border);
-  transition: border-color 200ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-.awx-home .VPFeature:hover,
-.awx-home .VPFeature:focus-visible {
-  border-color: var(--awx-primary);
-}
-
 .awx-home .VPHero .image-src {
   max-width: 140px;
   max-height: 180px;
+}
+
+/* On a phone the mark would push Get started below the fold. */
+@media (max-width: 639px) {
+  .awx-home .VPHero .image-src {
+    max-width: 64px;
+    max-height: 82px;
+  }
 }
 
 /* The mark stands on the field's own light. A tinted halo behind it reads as AI-SaaS decoration. */
@@ -125,26 +122,65 @@
   display: none;
 }
 
-/* Home sections: a group heading over a row of links that wraps. Page markup stays plain
-   markdown, because the agent's markup rule rejects HTML tags with attributes. */
+/* Home guides: each list item is a card, and its link covers the whole card. Page markup stays
+   plain markdown, because the agent's markup rule rejects HTML tags with attributes. */
 .awx-home .VPHome .vp-doc h3 {
-  margin: 24px 0 8px;
-  font-size: 14px;
+  margin: 28px 0 12px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--vp-c-text-2);
 }
 
 .awx-home .VPHome .vp-doc ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.awx-home .VPHome .vp-doc li + li {
+.awx-home .VPHome .vp-doc ul > li {
+  position: relative;
   margin: 0;
+  padding: 16px;
+  border: 1px solid var(--awx-border);
+  border-radius: 0.625rem;
+  background: var(--awx-surface-strong);
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.55;
+  transition: border-color 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+
+.awx-home .VPHome .vp-doc ul > li > a {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.awx-home .VPHome .vp-doc ul > li > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.awx-home .VPHome .vp-doc ul > li:hover,
+.awx-home .VPHome .vp-doc ul > li:has(> a:focus-visible) {
+  border-color: var(--awx-primary);
+}
+
+.awx-home .VPHome .vp-doc ul > li > a:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .awx-home .VPHome .vp-doc ul > li {
+    transition: none;
+  }
 }
 
 /* Getting started: number the quick-start steps, and only those. */
@@ -152,14 +188,14 @@
   counter-reset: step;
 }
 
-.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#what-to-do-next ~ h3) {
+.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#when-something-goes-wrong ~ h3) {
   display: flex;
   align-items: center;
   gap: 12px;
   counter-increment: step;
 }
 
-.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#what-to-do-next ~ h3)::before {
+.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#when-something-goes-wrong ~ h3)::before {
   content: counter(step);
   display: inline-grid;
   place-items: center;
@@ -178,6 +214,45 @@
 .vp-doc .mermaid .edgeLabel,
 .vp-doc .mermaid .edgeLabel p {
   background-color: var(--vp-c-bg) !important;
+}
+
+/* Links read by color and weight; the underline shows only on hover and focus. The weight is the
+   cue that does not depend on color (WCAG 1.4.1). */
+.vp-doc a {
+  font-weight: 500;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.vp-doc a:hover,
+.vp-doc a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.vp-doc a.header-anchor:hover {
+  text-decoration: none;
+}
+
+/* One visible focus ring in the accent, in place of the thin browser default. */
+:focus-visible {
+  outline: 2px solid var(--awx-primary);
+  outline-offset: 2px;
+}
+
+.vp-doc kbd {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 1px 6px;
+  border: 1px solid var(--awx-border);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  background: var(--awx-surface-strong);
+  color: var(--awx-foreground);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85em;
+  line-height: 1.5;
+  text-align: center;
 }
 
 ::selection {

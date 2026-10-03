@@ -1,6 +1,7 @@
 ---
 title: Personalization
 order: 9
+group: Use AgentWorkX
 ---
 
 # Personalization

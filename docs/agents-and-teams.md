@@ -1,6 +1,7 @@
 ---
 title: Agents and teams
 order: 3
+group: Build and run agents
 ---
 
 # Agents and teams

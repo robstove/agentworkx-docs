@@ -1,6 +1,7 @@
 ---
 title: Automation
 order: 6
+group: Build and run agents
 ---
 
 # Automation
@@ -25,6 +26,13 @@ A schedule has:
 From the list you can **run a schedule now**, edit it, or delete it. Each schedule shows its health (Healthy, Failing, Waiting on approval, Auto-paused) and a history of its runs.
 
 When a scheduled run needs a tool approval, it waits in the [Approvals drawer](/tools#approvals-drawer).
+
+### If a schedule says Failing or Auto-paused
+
+- **Failing** means its latest runs failed. The schedule is still on and runs again at its next time.
+- **Auto-paused** means AgentWorkX turned the schedule off after too many failures in a row.
+
+Open the schedule's run history and read the failed run. Fix the cause, such as a provider key or a tool the agent needs. Then turn the schedule back on.
 
 ## Hooks
 

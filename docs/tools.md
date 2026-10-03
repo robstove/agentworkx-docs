@@ -1,6 +1,7 @@
 ---
 title: Tools and connectors
 order: 5
+group: Build and run agents
 ---
 
 # Tools and connectors
@@ -24,6 +25,8 @@ Agent Connectors add tools from outside services that speak the Model Context Pr
 - **Connect**, **reconnect**, or **disconnect** it.
 - Turn **Available to agents** on or off.
 - See the tools each connector offers.
+
+If a connector shows as disconnected, or its tools stop working, choose **Reconnect**. For a sign-in connector, sign in again in the window that opens.
 
 ## Integrations
 

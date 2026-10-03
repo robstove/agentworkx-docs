@@ -5,19 +5,31 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 const docsRoot = join(import.meta.dirname, "..");
 
 // The AgentWorkX agent adds pages through pull requests, so the sidebar reads the folder.
-// Each page takes its title and position from frontmatter `title` and `order`; a page without
-// `order` goes last.
-function sidebarItems() {
-  return readdirSync(docsRoot)
+// Each page takes its title, position, and audience group from frontmatter `title`, `order`, and
+// `group`. A page without `order` goes last in its group; a page without `group` goes to "More".
+const groups = ["Start here", "Use AgentWorkX", "Build and run agents", "More"];
+
+function sidebar() {
+  const pages = readdirSync(docsRoot)
     .filter((file) => file.endsWith(".md") && file !== "index.md")
     .map((file) => {
       const text = readFileSync(join(docsRoot, file), "utf8");
-      const title = /^title:\s*(.+)$/m.exec(text)?.[1]?.trim() ?? file.slice(0, -3);
-      const order = Number(/^order:\s*(\d+)$/m.exec(text)?.[1] ?? Infinity);
-      return { text: title, link: `/${file.slice(0, -3)}`, order };
+      const field = (name: string) => new RegExp(`^${name}:\\s*(.+)$`, "m").exec(text)?.[1]?.trim();
+      return {
+        text: field("title") ?? file.slice(0, -3),
+        link: `/${file.slice(0, -3)}`,
+        order: Number(field("order") ?? Infinity),
+        group: groups.includes(field("group") ?? "") ? field("group")! : "More",
+      };
     })
-    .sort((a, b) => a.order - b.order || a.text.localeCompare(b.text))
-    .map(({ text, link }) => ({ text, link }));
+    .sort((a, b) => a.order - b.order || a.text.localeCompare(b.text));
+
+  return groups
+    .map((group) => ({
+      text: group,
+      items: pages.filter((page) => page.group === group).map(({ text, link }) => ({ text, link })),
+    }))
+    .filter((group) => group.items.length > 0);
 }
 
 export default withMermaid({
@@ -46,7 +58,8 @@ export default withMermaid({
   themeConfig: {
     logo: "/logo.svg",
     search: { provider: "local" },
-    sidebar: [{ text: "Guides", items: sidebarItems() }],
+    sidebar: sidebar(),
+    lastUpdated: { formatOptions: { dateStyle: "medium" } },
     editLink: {
       pattern: "https://github.com/robstove/agentworkx-docs/edit/main/docs/:path",
     },

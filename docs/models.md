@@ -1,6 +1,7 @@
 ---
 title: Models and providers
 order: 4
+group: Build and run agents
 ---
 
 # Models and providers
