@@ -94,13 +94,13 @@
 }
 
 .awx-home .VPFeature {
-  background: color-mix(in oklch, var(--awx-background) 88%, transparent);
+  background: var(--awx-background);
   border: 1px solid var(--awx-border);
-  backdrop-filter: blur(6px);
-  transition: border-color 0.2s;
+  transition: border-color 200ms cubic-bezier(0.2, 0, 0, 1);
 }
 
-.awx-home .VPFeature:hover {
+.awx-home .VPFeature:hover,
+.awx-home .VPFeature:focus-visible {
   border-color: var(--awx-primary);
 }
 
@@ -109,47 +109,57 @@
   max-height: 180px;
 }
 
+/* The mark stands on the field's own light. A tinted halo behind it reads as AI-SaaS decoration. */
 .awx-home .VPHero .image-bg {
-  background-image: radial-gradient(
-    circle,
-    color-mix(in oklch, var(--awx-primary) 45%, transparent),
-    transparent 70%
-  );
-  opacity: 0.6;
+  display: none;
 }
 
-/* The full feature index: one column per area, as many columns as fit. */
-.awx-index {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0 24px;
-}
-
-.awx-index > p {
-  grid-column: 1 / -1;
-  margin: 16px 0 0;
-}
-
-.awx-index > p strong {
-  color: var(--awx-text-soft);
-  font-size: 12px;
+/* Home sections: a group heading over a row of links that wraps. Page markup stays plain
+   markdown, because the agent's markup rule rejects HTML tags with attributes. */
+.awx-home .VPHome .vp-doc h3 {
+  margin: 24px 0 8px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  color: var(--vp-c-text-2);
 }
 
-.awx-index > ul {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0 24px;
-  margin: 4px 0 0;
+.awx-home .VPHome .vp-doc ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.awx-index > ul > li {
-  margin: 4px 0;
+.awx-home .VPHome .vp-doc li + li {
+  margin: 0;
+}
+
+/* Getting started: number the quick-start steps, and only those. */
+.awx-steps .vp-doc {
+  counter-reset: step;
+}
+
+.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#what-to-do-next ~ h3) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  counter-increment: step;
+}
+
+.awx-steps .vp-doc h2#quick-start ~ h3:not(h2#what-to-do-next ~ h3)::before {
+  content: counter(step);
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--awx-primary);
+  border-radius: 9999px;
+  color: var(--awx-primary);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Mermaid paints its own grey behind edge labels; use the page surface instead. */

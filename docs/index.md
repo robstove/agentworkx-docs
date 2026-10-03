@@ -5,14 +5,14 @@ pageClass: awx-home
 
 hero:
   name: AgentWorkX
-  text: Agents that remember, use your tools, and work on their own.
-  tagline: Persistent threads, connected tools, and schedules, in one workspace. These docs show you how to use each part.
+  text: Agents that keep working.
+  tagline: Every thread is saved. Every risky tool call waits for you. Every schedule runs while you're away.
   image:
     src: /logo.svg
     alt: AgentWorkX
   actions:
     - theme: brand
-      text: Get started
+      text: Get started in 5 minutes
       link: /getting-started
     - theme: alt
       text: Browse features
@@ -53,17 +53,36 @@ features:
     linkText: Personalization guide
 ---
 
+## Choose your path
+
+### I want to get work done
+
+- [Start your first chat](/getting-started#start-a-chat)
+- [Rewrite and translate](/chat#rewrite-and-translate)
+- [Ideas and prompts](/capture#prompts)
+- [Workspaces](/workspaces#workspaces)
+- [The board](/chat#the-board)
+
+### I build and run agents
+
+- [Create an agent](/agents-and-teams#create-something-new)
+- [Model profiles](/models#model-profiles)
+- [Agent Connectors](/tools#agent-connectors)
+- [Schedules](/automation#schedules)
+- [Hooks](/automation#hooks)
+
 ## All features
 
-<div class="awx-index">
+### Start here
 
-**Start here**
-- [Sign in](/getting-started#sign-in)
+- [Before you start](/getting-started#before-you-start)
 - [Connect a model provider](/getting-started#connect-a-model-provider)
 - [Start a chat](/getting-started#start-a-chat)
+- [Pick up where you left off](/getting-started#pick-up-where-you-left-off)
 - [Find your way around](/getting-started#find-your-way-around)
 
-**Chat**
+### Chat
+
 - [The composer](/chat#the-composer)
 - [Slash commands](/chat#slash-commands)
 - [Rewrite and translate](/chat#rewrite-and-translate)
@@ -73,20 +92,23 @@ features:
 - [The inspector](/chat#the-inspector)
 - [The board](/chat#the-board)
 
-**Agents and teams**
+### Agents and teams
+
 - [Launch an agent](/agents-and-teams#launch-an-agent)
 - [Create something new](/agents-and-teams#create-something-new)
 - [Teams](/agents-and-teams#teams)
 - [Take over](/agents-and-teams#take-over)
 
-**Models and providers**
+### Models and providers
+
 - [Language Models](/models#language-models)
 - [Model profiles](/models#model-profiles)
 - [AI Powered features](/models#ai-powered-features)
 - [Help on any setting](/models#help-on-any-setting)
 - [Lab](/models#lab)
 
-**Tools and connectors**
+### Tools and connectors
+
 - [Choose tools for a thread](/tools#choose-tools-for-a-thread)
 - [Agent Connectors](/tools#agent-connectors)
 - [Integrations](/tools#integrations)
@@ -94,26 +116,28 @@ features:
 - [Approvals drawer](/tools#approvals-drawer)
 - [HTML templates](/tools#html-templates)
 
-**Automation**
+### Automation
+
 - [Schedules](/automation#schedules)
 - [Hooks](/automation#hooks)
 
-**Workspaces and terminal**
+### Workspaces and terminal
+
 - [Workspaces](/workspaces#workspaces)
 - [Terminal](/workspaces#terminal)
 - [Shell Environment](/workspaces#shell-environment)
 
-**Ideas and prompts**
+### Ideas and prompts
+
 - [Ideas](/capture#ideas)
 - [Prompts](/capture#prompts)
 
-**Personalization**
+### Personalization
+
 - [Appearance](/personalization#appearance)
 - [Theme Studio](/personalization#theme-studio)
 - [Chat preferences](/personalization#chat-preferences)
 - [Reset](/personalization#reset)
-
-</div>
 
 ## How these docs change
 
