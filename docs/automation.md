@@ -11,6 +11,8 @@ Agents can work without you in the chat. Schedules run them on a timer, and hook
 
 Open **Schedules** in the left rail.
 
+![The schedule editor](/screenshots/schedule-editor.svg)
+
 A schedule has:
 
 - A **name**, an **agent**, and a **prompt**.
@@ -27,6 +29,8 @@ When a scheduled run needs a tool approval, it waits in the [Approvals drawer](/
 ## Hooks
 
 Hooks are rules that check an agent's actions and can block them. Open **Settings → Hooks**.
+
+![Settings, Hooks, with a hook and its last run](/screenshots/settings-hooks.svg)
 
 A hook runs at one point in a turn:
 

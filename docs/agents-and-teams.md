@@ -11,6 +11,8 @@ AgentWorkX comes with agents for different jobs. You can build new ones, group t
 
 Press <kbd>Ctrl</kbd>+<kbd>K</kbd> (<kbd>Cmd</kbd>+<kbd>K</kbd> on a Mac) on Home to open the **Launch Bay**. It groups the agents by category. Pin the ones you use most, and pick one to start a chat with it.
 
+![The Launch Bay with agents grouped by category](/screenshots/launch-bay.svg)
+
 In a chat, use the agent picker under the composer, or type `/agent`.
 
 ## Create something new
@@ -27,11 +29,15 @@ The **+** button (on Home and in the Chat thread rail) opens **Create new**. Eac
 | Support Ticket | Support agent |
 | Skill, Workflow, Task, User Directive, Image | Conversation agent |
 
+![The Create new menu](/screenshots/create-new-menu.svg)
+
 **Workspace**, **Idea**, and **Prompt** open their editors directly. **Agent Connector** opens [Agent Connectors](/tools#agent-connectors).
 
 ## Teams
 
 Open **Teams** from the left rail, or go to **Home → Teams**.
+
+![A team page with its work, roster, and charter](/screenshots/team-detail.svg)
 
 - Filter teams by status (Active, Forming, Paused, Completed) and sort them.
 - Start a team with the Team maker, from a blank chat or from a starter such as **Research pair** or **Review bench**.
@@ -42,6 +48,8 @@ Open **Teams** from the left rail, or go to **Home → Teams**.
 ## Take over
 
 **Take over** puts a supervisor agent on a thread. The supervisor checks the thread on a schedule and nudges the agent that owns it.
+
+![The Take over cadence picker](/screenshots/take-over.svg)
 
 1. Select **Take over** in the composer, or type `/takeover`.
 2. Choose how often it checks: every 15 minutes, every 30 minutes, or every hour. You can also set your own interval.

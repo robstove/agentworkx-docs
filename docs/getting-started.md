@@ -19,17 +19,23 @@ This page takes you from sign-in to your first agent answer. It takes about five
 
 Open **Home**. The **Connect a model provider** card asks for your key, or for the address of your local model. Paste it in and connect.
 
+![The Connect a model provider card on Home](/screenshots/home-provider-card.svg)
+
 You can add more providers later in [Settings → Language Models](/models#language-models).
 
 ### Start a chat
 
 Type a question in the composer on **Home** and press Enter. AgentWorkX opens **Chat**, and the agent answers.
 
+![The Home composer with a first question](/screenshots/home-composer.svg)
+
 To pick a different agent first, press <kbd>Ctrl</kbd>+<kbd>K</kbd> (<kbd>Cmd</kbd>+<kbd>K</kbd> on a Mac) to open the **Launch Bay**.
 
 ### Pick up where you left off
 
 Close the tab and open AgentWorkX again. Your conversation is in the thread rail on the left of **Chat**. Select it and keep going. The agent continues from the thread's history.
+
+![The thread rail in Chat with a saved thread](/screenshots/chat-thread-rail.svg)
 
 ## What to do next
 
@@ -62,5 +68,7 @@ The left rail has three pages and a set of drawers:
 | **Templates** | Saved HTML layouts |
 | **Workspaces** | Folders of files that agents can use |
 | **Teams** | Agent teams and their projects |
+
+![The left rail with its pages and drawers](/screenshots/left-rail.svg)
 
 The account menu at the bottom of the rail opens your account and signs you out. Press <kbd>Ctrl</kbd>+<kbd>,</kbd> (<kbd>Cmd</kbd>+<kbd>,</kbd> on a Mac) to open **Settings**.

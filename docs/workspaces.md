@@ -11,6 +11,8 @@ Workspaces hold files that you and your agents work on. The terminal gives you a
 
 Open **Workspaces** in the left rail, or go to **Home → Workspaces**.
 
+![A workspace with its file tree and editor](/screenshots/workspace-files.svg)
+
 - **Create** a workspace from a blank form or a starter (Scratch, Reports, or Source).
 - **Set it as active**, edit it, or delete it.
 - **Browse** its files and folders. Create, rename, move, and delete them.
@@ -23,6 +25,8 @@ To give a thread a workspace, use the workspace picker under the composer. The [
 
 Open the terminal from the Chat header, or press <kbd>Ctrl</kbd>+<kbd>`</kbd>.
 
+![The terminal panel in Chat](/screenshots/terminal.svg)
+
 - Run a command, and stop it.
 - Switch between shells and sessions.
 - Clear, restart, close, or resize the panel.
@@ -30,6 +34,8 @@ Open the terminal from the Chat header, or press <kbd>Ctrl</kbd>+<kbd>`</kbd>.
 ## Shell Environment
 
 Open **Settings → Shell Environment** to set environment variables for the terminal and for agent shells.
+
+![Settings, Shell Environment, with variables](/screenshots/settings-shell-environment.svg)
 
 - **Add** a variable, or **paste** lines from a `.env` file.
 - Use the **Git author and committer** preset to set your Git name and email.

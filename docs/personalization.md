@@ -11,6 +11,8 @@ Make AgentWorkX look and behave the way you like.
 
 Open **Settings → Appearance**.
 
+![Settings, Appearance, with themes and backgrounds](/screenshots/settings-appearance.svg)
+
 - Choose **light** or **dark** mode. The toggle at the bottom of the left rail switches it too.
 - Pick a **color theme**: a built-in theme, one of your own, or one imported from the **tweakcn** catalog. Hover over a theme to preview it.
 - Choose **Design a theme** to build one with the Theme agent.
@@ -20,6 +22,8 @@ Open **Settings → Appearance**.
 
 Choose **Customize** on a theme to open the Theme Studio, where you edit the theme against the live app.
 
+![The Theme Studio](/screenshots/theme-studio.svg)
+
 - Edit the theme's colors and other values. A filter helps you find one.
 - Ask the agent for a change, then apply or discard what it proposes.
 - **Save**. When you save a built-in theme, AgentWorkX saves your changes as a new copy.
@@ -27,6 +31,8 @@ Choose **Customize** on a theme to open the Theme Studio, where you edit the the
 ## Chat preferences
 
 Open **Settings → Chat**.
+
+![Settings, Chat](/screenshots/settings-chat.svg)
 
 - Set **your avatar** and the **assistant's avatar**.
 - Choose a **streaming style**, the animation that shows while an agent works, or none.

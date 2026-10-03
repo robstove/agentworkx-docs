@@ -11,6 +11,8 @@ AgentWorkX works with several model providers. You choose which models are on, a
 
 Open **Settings → Language Models**.
 
+![Settings, Language Models, with a connected provider](/screenshots/settings-language-models.svg)
+
 - **Add a provider:** OpenAI, Anthropic, Google Vertex AI, or any OpenAI-compatible service (a base URL and an optional key).
 - **Pick models** from the provider's catalog. The **Recommended** filter narrows the list.
 - **Open a provider** to see its models and which profiles use it, to check that it works, or to replace its key.
@@ -21,6 +23,8 @@ Open **Settings → Language Models**.
 
 A model profile is a model plus its settings: name, description, parameters, and thinking level. Agents and features use profiles, not raw models.
 
+![The model profile editor](/screenshots/model-profile-editor.svg)
+
 Pick a thread's profile with the profile picker under the composer, or type `/model`. To build a profile with help, choose **Create new → Model Profile**.
 
 ## AI Powered features
@@ -30,6 +34,8 @@ Open **Settings → AI Powered** to choose which profile runs each built-in feat
 - A shared **Utility model**, which the features use unless you choose otherwise.
 - Translate, Prompt tools, Thread titles, Settings help, Conversation summaries, Tool selection, Second opinion, HTML templates, Embeddings, and Image generation.
 
+![Settings, AI Powered, with the feature list](/screenshots/settings-ai-powered.svg)
+
 ## Help on any setting
 
 Select the **?** next to a setting to read what it does. You can also ask a help agent about it.
@@ -37,3 +43,5 @@ Select the **?** next to a setting to read what it does. You can also ask a help
 ## Lab
 
 **Lab** sends one prompt to several agents and shows the answers side by side. Pick a winner, retry failures, or start a new comparison. Open it from the menu under the logo, or choose **Compare this prompt** in the [Prompts drawer](/capture#prompts).
+
+![The Lab with answers side by side](/screenshots/lab.svg)

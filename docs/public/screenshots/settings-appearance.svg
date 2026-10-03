@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Screenshot placeholder: Settings, Appearance, with themes and backgrounds">
+  <rect width="1600" height="900" rx="20" fill="#1a1a1f"/>
+  <rect x="24" y="24" width="1552" height="852" rx="12" fill="none" stroke="#3b3b44" stroke-width="3" stroke-dasharray="14 10"/>
+  <g transform="translate(800 330)" fill="none" stroke="#8f8f99" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-70" y="-50" width="140" height="100" rx="12"/>
+    <circle cx="-30" cy="-15" r="12"/>
+    <path d="M -70 35 L -20 -5 L 20 30 L 40 15 L 70 40"/>
+  </g>
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" text-anchor="middle">
+    <text x="800" y="470" font-size="40" font-weight="600" fill="#f2f2f5">Settings, Appearance, with themes and backgrounds</text>
+    <text x="800" y="530" font-size="28" fill="#a3a3ad">Screenshot placeholder</text>
+    <text x="800" y="580" font-size="22" fill="#8f8f99" font-family="IBM Plex Mono, ui-monospace, monospace">screenshots/settings-appearance.svg</text>
+  </g>
+</svg>
