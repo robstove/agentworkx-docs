@@ -5,7 +5,7 @@ pageClass: awx-home
 
 hero:
   name: AgentWorkX
-  text: Agents that keep working.
+  text: Describe it. Agents do the work.
   tagline: Every thread is saved. Every risky tool call waits for you. Every schedule runs while you're away.
   image:
     src: /logo.svg

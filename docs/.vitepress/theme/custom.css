@@ -62,10 +62,21 @@
  * uses. A tenant branding change or a CDN outage there changes or blanks this background.
  */
 .awx-home {
+  --vp-home-hero-name-color: var(--awx-foreground);
+}
+
+/* The illustration covers the viewport, not the page: a fixed layer under the content.
+   A pseudo-element, not `background-attachment: fixed`, which iOS Safari resolves to scroll.
+   z-index -1 holds only while .awx-home paints no background and forms no stacking context. */
+.awx-home::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background: var(--awx-shell-background)
     url("https://aadcdn.msauthimages.net/dbd5a2dd-diah-fgqfu8qddb0ospfwugf5thawxhb9wwobq7xajo/logintenantbranding/0/illustration?ts=639250757507791900")
     center / cover no-repeat;
-  --vp-home-hero-name-color: var(--awx-foreground);
 }
 
 .awx-home .VPNavBar,
